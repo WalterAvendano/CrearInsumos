@@ -69,23 +69,34 @@ public class NFResultadosPL {
                         System.out.println(local);
                         break;
                     case 2:
+                    //   local = (cadena).trim().replace("Ã©", "e"); Se repite porque se duplica el nombre )icono)
+                    //    System.out.println(local);
+                        break;
+                    case 3:
                         visitante = (cadena).trim().replace("Ã©", "e");
                         System.out.println(visitante);
                         //String[]varGoles = cadena.split("-");
                         //goleslocal = varGoles[0].trim().replace("Â ","");
                         //golesvisitante = varGoles[1].trim().replace("Â ","");
                         break;
-                    case 3:            
+                    case 4:
+                    //   local = (cadena).trim().replace("Ã©", "e"); Se repite porque se duplica el nombre )icono)
+                    //    System.out.println(local);
+                        break;
+                    case 5:            
                         //visitante = (cadena).trim().replace("Ã©", "e");
                         //System.out.println(visitante);
                         goleslocal = (cadena).trim().replace("Ã©", "e");
                         System.out.println(goleslocal);
                         break;
-                    case 4:
+                    case 6:
                         golesvisitante = (cadena).trim().replace("Ã©", "e");
                         System.out.println(golesvisitante);
                         //escribir.write(fecha + "," + local + "," + goleslocal + "," + golesvisitante + "," + visitante + "," + "a" + "\r\n");
+                        escribir.write(fecha + "," + local + "," + goleslocal + "," + visitante + "," + golesvisitante + "," + "a" + "\r\n");
                         break;
+                    // Se comentan estas lineas por cambio de formato   
+                    /*    
                     case 5:  
                         goleslocal1 = (cadena).trim().replace("Ã©", "e");
                         goleslocal1 = (cadena).trim().replace("-", "");
@@ -99,6 +110,7 @@ public class NFResultadosPL {
                         System.out.println(golesvisitante1);
                         escribir.write(fecha + "," + local + "," + goleslocal + "," + goleslocal1 + "," + visitante + "," + golesvisitante + "," + golesvisitante1 + "," + "a" + "\r\n");
                         break;
+                        */ 
                 }
 
             }

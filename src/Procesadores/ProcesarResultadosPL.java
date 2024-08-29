@@ -30,22 +30,22 @@ public class ProcesarResultadosPL {
             String hora = fecha.substring(7,9);
             String local = parts[1];
             String goleslocal = parts[2];
-            String goleslocal1 = parts[3];
-            String visitante = parts[4];
-            String golesvisitante = parts[5];
-            String golesvisitante1 = parts[6];
+            //String goleslocal1 = parts[3];
+            String visitante = parts[3];
+            String golesvisitante = parts[4];
+          //  String golesvisitante1 = parts[6];
             if ("01".equals(fecha1)) {
                 //escribir.write("2023/" + fecha1 + "/" + fecha2 + "," + hora+ ","+ local + "," + goleslocal + "," + "," + goleslocal1 + ","+ visitante + "," + golesvisitante+ "+ \",\" + golesvisitante1 + \",\"\r\n");
-                escribir.write("2024/" + fecha1 + "/" + fecha2 +  ","+ hora+ ","+ local + ","+ goleslocal + ","+ goleslocal1 + "," + visitante + "," + golesvisitante+ "," + golesvisitante1+ "\r\n");
+                escribir.write("2024/" + fecha1 + "/" + fecha2 +  ","+ hora+ ","+ local + ","+ goleslocal  + "," + visitante + "," + golesvisitante+  "\r\n");
             } else {
                 if ("02".equals(fecha1)) {
                     escribir.write("2024/" + fecha1 + "/" + fecha2 +  ","+ hora+ ","+ local + ","+ goleslocal + "," + visitante + "," + golesvisitante+ "\r\n");
                     //escribir.write("2023/" + fecha1 + "/" + fecha2 + "," + hora+ ","+ local + "," + goleslocal + "," + "," + goleslocal1 + ","+ visitante + "," + golesvisitante+ "+ \",\" + golesvisitante1 + \",\"\r\n");
-                    escribir.write("2024/" + fecha1 + "/" + fecha2 +  ","+ hora+ ","+ local + ","+ goleslocal + ","+ goleslocal1 + "," + visitante + "," + golesvisitante+ "," + golesvisitante1+ "\r\n");
+                    escribir.write("2024/" + fecha1 + "/" + fecha2 +  ","+ hora+ ","+ local + ","+ goleslocal  + "," + visitante + "," + golesvisitante+  "\r\n");
                 } else {
                     //escribir.write("2022/" + fecha1 + "/" + fecha2 + ","+ hora+ ","+ local + "," + goleslocal + "," + visitante + "," + golesvisitante+ "\r\n");
                     //escribir.write("2022/" + fecha1 + "/" + fecha2 + "," + hora+ ","+ local + "," + goleslocal + "," + "," + goleslocal1 + ","+ visitante + "," + golesvisitante+ "+ \",\" + golesvisitante1 + \",\"\r\n");
-                    escribir.write("2024/" + fecha1 + "/" + fecha2 +  ","+ hora+ ","+ local + ","+ goleslocal + ","+ goleslocal1 + "," + visitante + "," + golesvisitante+ "," + golesvisitante1+ "\r\n");
+                    escribir.write("2024/" + fecha1 + "/" + fecha2 +  ","+ hora+ ","+ local + ","+ goleslocal + "," + visitante + "," + golesvisitante+  "\r\n");
                 }
             }
         }

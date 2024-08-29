@@ -69,11 +69,19 @@ public class NFJornadaPL {
                         System.out.println(local);
                         break;
                     case 2:
+                        //local = (cadena).trim().replace("Ã©", "e"); Se crea y comenta porque repite el valor (iconos)
+                        //System.out.println(local);
+                        break;
+                    case 3:
                         visitante = (cadena).trim().replace("Ã©", "e");
                         System.out.println(visitante);
                         escribir.write(fecha + "," + local + "," + visitante + "," + "a" + "\r\n");
                         break;
-                    case 3:
+                    case 4:
+                        //local = (cadena).trim().replace("Ã©", "e"); Se crea y comenta porque repite el valor (iconos)
+                        //System.out.println(local);
+                        break;
+                    case 5:
                         //visitante = (cadena).trim().replace("Ã©", "e");
                         //System.out.println(visitante);
                         //escribir.write(fecha + "," + local + "," + visitante + "," + "a" + "\r\n");
